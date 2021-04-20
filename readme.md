@@ -1,6 +1,6 @@
 # SAMbíóin Movie Theater
 Sambíóin is a re-design of a movie theater website I did early in my web development studies back in 2018.<br>
-Check out the project here: ~Live link~
+Check out the project live with GitHub Pages: https://oskinb.github.io/Movie-Theater/ 
 > Only desktop view.
 
 ## Project functionality
