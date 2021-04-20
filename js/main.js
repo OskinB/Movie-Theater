@@ -136,7 +136,7 @@ var movieCards = [
     },
     {
         title: "A Star is Born",
-        poster: "../images/starBorn-poster.jpg",
+        poster: "images/starBorn-poster.jpg",
         movieTheatre: [{
             house: "Álfabakki",
             timeArray: [{
@@ -179,7 +179,7 @@ var movieCards = [
     },
     {
         title: "The Grinch",
-        poster: "../images/theGrinch-poster.jpg",
+        poster: "images/theGrinch-poster.jpg",
         movieTheatre: [{
             house: "Álfabakki",
             timeArray: [{
@@ -209,7 +209,7 @@ var movieCards = [
     },
     {
         title: "Overlord",
-        poster: "../images/Overlord-poster.jpg",
+        poster: "images/Overlord-poster.jpg",
         movieTheatre: [{
             house: "Álfabakki",
             timeArray: [{
@@ -238,7 +238,7 @@ var movieCards = [
     },
     {
         title: "Widows",
-        poster: "../images/Widows-poster.jpg",
+        poster: "images/Widows-poster.jpg",
         movieTheatre: [{
             house: "Kringlan",
             timeArray: [{
@@ -255,7 +255,7 @@ var movieCards = [
     },
     {
         title: "The Nutcracker and the Four Realms",
-        poster: "../images/nutcracker-poster.jpg",
+        poster: "images/nutcracker-poster.jpg",
         movieTheatre: [{
             house: "Álfabakki",
             timeArray: [{
@@ -267,7 +267,7 @@ var movieCards = [
     },
     {
         title: "Halloween",
-        poster: "../images/Halloween-poster.jpg",
+        poster: "images/Halloween-poster.jpg",
         movieTheatre: [{
             house: "Álfabakki",
             timeArray: [{
@@ -279,7 +279,7 @@ var movieCards = [
     },
     {
         title: "Hunter Killer",
-        poster: "../images/Hunterkiller-poster.jpg",
+        poster: "images/Hunterkiller-poster.jpg",
         movieTheatre: [{
             house: "Egilshöll",
             timeArray: [{

@@ -5,7 +5,7 @@ var comingSoonCard = [
     {
     title: "Ralph Breaks the Internet",
     poster: "images/Wreckitralph2.jpg",
-    ageLimit: "../images/L.png",
+    ageLimit: "images/L.png",
     premiere: "30.nóvember 2018",
     genreArray: [{
         genre: "Gamanmynd"
@@ -40,8 +40,8 @@ var comingSoonCard = [
 },
 {
     title: "Mortal Engines",
-    poster: "../images/MortalEngines-poster.jpg",
-    ageLimit: "../images/12.png",
+    poster: "images/MortalEngines-poster.jpg",
+    ageLimit: "images/12.png",
     premiere: "14.desember 2018",
     genreArray: [{
         genre: "Hasar"
@@ -71,8 +71,8 @@ var comingSoonCard = [
 },
 {
     title: "Aquaman",
-    poster: "../images/Aquaman-poster.jpg",
-    ageLimit: "../images/12.png",
+    poster: "images/Aquaman-poster.jpg",
+    ageLimit: "images/12.png",
     premiere: "19.desember 2018",
     genreArray: [{
         genre: "Hasar"
@@ -102,8 +102,8 @@ var comingSoonCard = [
 },
 {
     title: "Mary Poppins Returns",
-    poster: "../images/maryPoppins-poster.jpg",
-    ageLimit: "../images/L.png",
+    poster: "images/maryPoppins-poster.jpg",
+    ageLimit: "images/L.png",
     premiere: "26.desember 2018",
     genreArray: [{
         genre: "Fjölskyldumynd"
@@ -136,8 +136,8 @@ var comingSoonCard = [
 },
 {
     title: "Robin Hood",
-    poster: "../images/robinHood-poster.jpg",
-    ageLimit: "../images/12.png",
+    poster: "images/robinHood-poster.jpg",
+    ageLimit: "images/12.png",
     premiere: "4.janúar 2019",
     genreArray: [{
         genre: "Ævintýri"
@@ -164,8 +164,8 @@ var comingSoonCard = [
 },
 {
     title: "Captain Marvel",
-    poster: "../images/captainMarvel-poster.jpg",
-    ageLimit: "../images/12.png",
+    poster: "images/captainMarvel-poster.jpg",
+    ageLimit: "images/12.png",
     premiere: "8.mars 2019",
     genreArray: [{
         genre: "Hasar"
@@ -202,8 +202,8 @@ var comingSoonCard = [
 },
 {
     title: "Aladdin",
-    poster: "../images/Aladdin-poster.jpg",
-    ageLimit: "../images/L.png",
+    poster: "images/Aladdin-poster.jpg",
+    ageLimit: "images/L.png",
     premiere: "22.maí 2019",
     genreArray: [{
         genre: "Ævintýri"
@@ -234,8 +234,8 @@ var comingSoonCard = [
 },
 {
     title: "Rocketman",
-    poster: "../images/rocketman-poster.jpg",
-    ageLimit: "../images/12.png",
+    poster: "images/rocketman-poster.jpg",
+    ageLimit: "images/12.png",
     premiere: "5.júní 2019",
     genreArray: [{
         genre: "Drama"
