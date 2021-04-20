@@ -4,7 +4,7 @@ var cScard = document.querySelector(".comingSoonCard");
 var comingSoonCard = [
     {
     title: "Ralph Breaks the Internet",
-    poster: "../images/Wreckitralph2.jpg",
+    poster: "images/Wreckitralph2.jpg",
     ageLimit: "../images/L.png",
     premiere: "30.nóvember 2018",
     genreArray: [{

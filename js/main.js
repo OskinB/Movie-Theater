@@ -78,7 +78,7 @@ var mCards = document.querySelector(".movieCards");
 var movieCards = [
     {
         title: "Fantastic Beasts: The Crimes of Grindelwald",
-        poster: "../images/Fantasticbeasts-poster.jpg",
+        poster: "images/Fantasticbeasts-poster.jpg",
         movieTheatre: [{
             house: "Álfabakki",
             timeArray: [{
