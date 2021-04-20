@@ -1,0 +1,1487 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+
+}
+
+* {
+    text-decoration: none;
+    /* box-sizing: border-box; */
+}
+
+.container {
+    margin: 0 auto;
+    width: 1196px;
+}
+
+/* ************************************ */
+/* **** NAVBAR **** */
+/* ************************************ */
+
+header nav ul {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav {
+    width: 1255px;
+    margin: 0 auto;
+}
+
+header .navLogo img {
+    height: 200px;
+    width: 317px;
+}
+
+header .navOrder {
+    display: flex;
+    flex-direction: row;
+}
+
+header .navOrder .navLogo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header .navTab li {
+    font-size: 16PX;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 48px 0 0 64px;
+}
+
+header .navTab a {
+    color: #000;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+header .navTab {
+    display: flex;
+    justify-content: flex-end;
+    width: 988px;
+}
+
+.mobileNav {
+    display: none;
+}
+
+/* **** HOVER HEADER **** */
+header nav li a:hover {
+    border-bottom: 1px solid #E3000A;
+    border-left: 1px solid #E3000A;
+}
+
+/* ************************************ */
+/* **** FOOTER **** */
+/* ************************************ */
+footer .footerContainer {
+    width: 1440px;
+    height: 386px;
+    margin: 120px auto 0;
+}
+
+footer .footerOrder {
+    width: 1440px;
+    position: absolute;
+    bottom: 0;
+    position: sticky;
+}
+
+footer .footflex {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .footPic img {
+    height: 386px;
+    width: 464px;
+}
+
+footer .firstColumn {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 386px;
+    cursor: default;
+}
+
+footer .footInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    height: 386px;
+}
+
+footer .footInfo li {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footContact {
+    border-top: 2px solid #E3000A;
+    border-right: 2px solid #E3000A;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+footer .footContact li,
+footer .footContent li {
+    margin-top: 24px;
+}
+
+footer .footContent a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+footer .footSHolder {
+    display: flex;
+    align-self: flex-end;
+}
+
+footer .footSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 510px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #E3000A;
+    border-left: 2px solid #E3000A;
+}
+
+footer .footSocial li {
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+footer .footCTitle {
+    margin-top: 24px;
+}
+
+footer .footSTitle {
+    margin-bottom: 56px;
+    cursor: default;
+}
+
+footer .footSamTitle {
+    font-weight: 500;
+}
+
+footer .footerContainer h6 {
+    display: flex;
+    justify-content: center;
+    font-size: 24PX;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* **** HOVER FOOTER **** */
+footer .footContent li a:hover {
+    text-decoration: underline #E3000A;
+}
+
+/* SNAPCHAT MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 24%;
+    text-align: center;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 16px 16px;
+    background-color: #E3000A;
+    border-radius: 20px 20px 0 0;
+    color: #F5F5F5;
+}
+
+.modal-header h2 {
+    font-size: 24px;
+}
+
+.modal-body img {
+    height: 540px;
+    width: auto;
+    border-radius: 0 0 30px 30px;
+    border-right: 3px solid #007AC3;
+    border-left: 3px solid #007ac3;
+    border-bottom: 3px solid #007ac3;
+}
+
+/* MODAL ANIMATION */
+@-webkit-keyframes animatetop {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+/* ************************************ */
+/* **** FORSÍÐA **** */
+/* ************************************ */
+
+/* **** FILTER DROPDOWN **** */
+.filterShowTop {
+    display: flex;
+    flex-direction: row;
+    width: 1026px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.flexDropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.flexDropdown img {
+    height: 20px;
+    width: 20px;
+    padding: 8px;
+}
+
+.selectHouse,
+.selectDate {
+    height: 60px;
+    background-color: rgba(96, 102, 116, 0.8);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selectHouse {
+    width: 220px;
+    margin-right: 24px;
+}
+
+.selectDate {
+    width: 342px;
+}
+
+.flexDropdown h4 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #fff;
+    text-indent: 16px;
+    letter-spacing: 0.02em;
+}
+
+.dropdownTitle,
+.dropdownTitleHouse,
+.dropdownTitleDate {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownText {
+    display: none;
+    position: absolute;
+    background-color: #F5F5F5;
+    border: 1px solid rgba(96, 102, 116, 0.8);
+    box-sizing: border-box;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    top: 93%;
+}
+
+#HouseDropdown {
+    width: 220px;
+}
+
+#DateDropdown {
+    width: 342px;
+}
+
+.dropdownText a {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #007AC3;
+    text-align: left;
+    letter-spacing: 0.01em;
+    text-indent: 24px;
+    padding: 8px 0;
+}
+
+.show {
+    display: block;
+}
+
+/* **** HOVER FILTER DROPDOWN **** */
+.dropdownText a:hover {
+    background-color: #007AC3;
+    color: #F5F5F5;
+}
+
+.selectHouse:hover,
+.selectHouse:focus,
+.selectDate:hover,
+.selectDate:focus {
+    background-color: rgba(96, 102, 116, 1);
+}
+
+/* **** VINSÆLASTA MYNDIN **** */
+.filterShowTop .top1movie {
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filterShowTop .top1movie h2 {
+    font-size: 24PX;
+    line-height: 29px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.01em;
+    width: 294px;
+    margin: 48px 0 16px;
+    cursor: default;
+}
+
+.filterShowTop .top1movie h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.01em;
+    width: 281px;
+    margin-top: 8px;
+    cursor: default;
+}
+
+.filterShowTop .top1movie .flexRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filterShowTop .top1movie img {
+    height: 178px;
+    width: 468px;
+}
+
+/* **** FORSÍÐA KVIKMYNDA CARDS **** */
+.movieCards {
+    width: 85%;
+    margin: 64px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movieCards .card {
+    width: 220px;
+    margin: 0 16px 88px;
+}
+
+.movieCards .cardBanner {
+    transition: 0.2s;
+}
+
+.movieCards h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.01em;
+    min-height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.movieCards .cardPoster {
+    height: 328px;
+    width: 220px;
+    border: 1px solid #606674;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    position: relative;
+    top: 15px;
+}
+
+.movieCards .cardShowTime {
+    background: rgba(96, 102, 116, 0.8);
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px 0;
+    z-index: -1;
+    width: 222px;
+}
+
+.movieCards .cardShowTime h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 0.01em;
+    padding: 16px 0 8px;
+}
+
+.movieCards .cardShowTime p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #F5F5F5;
+    text-indent: 16px;
+    padding-bottom: 8px;
+}
+
+.movieCards .cardShowTime img {
+    height: 22px;
+    width: 22px;
+    padding: 0 8px;
+}
+
+/* **** FORSÍÐA SAMKLÚBBUR AUGLÝSING **** */
+.sambioAds {
+    font-family: 'Noticia Text', serif;
+    width: 1196px;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.samClubAd {
+    background-image: url('../images/augl-salur.jpg');
+    background-repeat: no-repeat;
+    background-size: 586px 330px;
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.samClubAd .ad {
+    width: 364px;
+    height: 120px;
+    background: rgba(0, 122, 195, 0.8);
+    border-radius: 8px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.samClubAd .flexText {
+    margin-top: 30px;
+}
+
+.samClubAd p {
+    font-style: italic;
+    font-size: 24px;
+    line-height: 30px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.samClubAd h5 {
+    font-size: 18px;
+    line-height: 30px;
+    color: #F5F5F5;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.samClubAd .adBtn {
+    width: 222px;
+    height: 115px;
+    background: rgba(0, 122, 195, 0.8);
+    border-radius: 8px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.samClubAd .flexSamBtn {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* **** FORSÍÐA SJOPPU AUGLÝSING **** */
+.sambioAds .samPoppAd {
+    background-image: url('../images/augl-popcorn.jpg');
+    background-repeat: no-repeat;
+    background-size: 586px 330px;
+    width: 586px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.sambioAds .samPoppAd p {
+    font-style: italic;
+    font-size: 32px;
+    line-height: 40px;
+    color: #F5F5F5;
+    text-align: center;
+    transform: rotate(18.08deg);
+    width: 224px;
+    height: 80px;
+}
+
+.sambioAds .samPoppAd h5 {
+    font-size: 24PX;
+    line-height: 30px;
+    color: #F5F5F5;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sambioAds .samPoppAd .textPlace {
+    position: absolute;
+    top: 60px;
+    right: 16px;
+}
+
+.sambioAds .samPoppAd .samBtnPlace {
+    position: absolute;
+    bottom: 32px;
+    right: 64px;
+}
+
+/* **** HOVER FORSÍÐA **** */
+.movieCards .cardBanner:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.movieCards .cardPoster:hover {
+    box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* ************************************ */
+/* **** VALIN MYND **** */
+/* ************************************ */
+
+/* **** BANNER MYND **** */
+.heroBanner .heroMovie {
+    background-image: url('../images/nutcracker-wide.jpg');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 40%;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0.25;
+}
+
+.heroBanner .titleHolder {
+    position: absolute;
+    left: 718px;
+    top: 550px;
+    cursor: default;
+}
+
+.heroBanner .titleHolder h1 {
+    font-size: 32PX;
+    line-height: 39px;
+    font-weight: 600;
+    color: #606674;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* **** ALMENNAR UPPLÝSINGAR **** */
+.movieBasicInfo {
+    width: 100%;
+    overflow: hidden;
+    cursor: default;
+}
+
+.movieBasicInfo .moviePoster {
+    height: 367px;
+    width: 245px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px 8px 2px 2px;
+    position: absolute;
+    top: 390px;
+    left: 455px;
+}
+
+.movieBasicInfo .movieAgelimit {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 727px;
+    left: 667px;
+}
+
+.movieBasicInfo .basicTop {
+    width: 66%;
+    float: right;
+}
+
+.movieBasicInfo .basicTop .basicFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.movieBasicInfo .basicTop .flexBasicInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 64px 0 8px;
+}
+
+.movieBasicInfo .basicTop h2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.movieBasicInfo .basicTop h3,
+.movieBasicInfo .basicTop p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.movieBasicInfo .basicTop p {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin: 64px 0;
+}
+
+/* **** LEIKARAR **** */
+.movieCast {
+    width: 756px;
+    margin: 16px auto;
+    cursor: default;
+}
+
+.movieCast h2 {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #000;
+    text-align: left;
+    margin: 0 24px 32px;
+}
+
+.movieCast h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin: 16px 0 8px;
+}
+
+.movieCast h4 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.movieCast img {
+    height: 219px;
+    width: 146px;
+    border: 1px solid #606674;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.movieCast .castCard {
+    display: flex;
+    flex-direction: column;
+    width: 146px;
+    margin: 28px;
+}
+
+.movieCast .castRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* **** TRAILER **** */
+.movieTrailer {
+    margin: 88px auto;
+    width: 635px;
+    height: 356px;
+    border-right: 8px solid #000;
+    border-left: 8px solid #000;
+    border-bottom: 5px solid #000;
+    border-top: 5px solid #000;
+    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+}
+
+/* **** VELJA SÝNINGU **** */
+.selectMovieShow {
+    width: 952px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectMovieShow .filterMovie {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+}
+
+.selectMovieShow .filterIcon img {
+    height: 60px;
+    width: 60px;
+    margin: 0 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.selectMovieShow .filterIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 24px;
+}
+
+.selectMovieShow .showTimeBtn {
+    margin-top: 40px;
+}
+
+.selectMovieShow .showTimeBtn .showTimeTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.showTimeBtn h2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #F5F5F5;
+    text-align: left;
+    letter-spacing: 0.02em;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    margin: 0 40px;
+}
+
+.showTimeBtn h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #F5F5F5;
+    letter-spacing: 0.01em;
+}
+
+.selectMovieShow .showTimeBtn .clickBtn {
+    background: rgba(0, 122, 195, 0.1);
+    border: 1px solid #007AC3;
+    box-sizing: border-box;
+    border-radius: 0px 8px 8px 0px;
+    width: 122px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.selectMovieShow .showTimeBtn .clickBtn a {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #007AC3;
+    letter-spacing: 0.01em;
+    padding: 20px 34px;
+    transition: 0.2s;
+}
+
+.selectMovieShow .showTimeBtn .timePlace {
+    background: rgba(0, 122, 195, 0.9);
+    border-radius: 8px 0px 0px 8px;
+    width: 586px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+}
+
+/* **** HOVER VALIN MYND **** */
+.selectMovieShow .showTimeBtn .clickBtn:hover {
+    background-color: rgba(0, 122, 195, 0.9);
+}
+
+.selectMovieShow .showTimeBtn .clickBtn a:hover {
+    color: #F5F5F5;
+}
+
+/* ************************************ */
+/* **** KAUPA BÍÓMIÐA **** */
+/* ************************************ */
+
+/* **** VALIN MYND INFO **** */
+.chosenMovie {
+    width: 760px;
+    margin: 80px auto 64px;
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+}
+
+.chosenMovie .chosenPoster .poster {
+    height: 367px;
+    width: 245px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px 8px 2px 2px;
+    position: relative;
+}
+
+.chosenMovie .chosenPoster .ageLimit {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 616px;
+    left: 783px;
+}
+
+.chosenMovie .chosenText h1 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.01em;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    margin: 48px 0 24px;
+}
+
+.chosenMovie .chosenText h2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.02em;
+    margin: 48px 0 8px;
+}
+
+.chosenMovie .chosenText h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.01em;
+    margin-bottom: 8px;
+}
+
+.chosenMovie .showTimeBtn {
+    background: rgba(0, 122, 195, 0.9);
+    border-radius: 8px;
+    width: 423px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+    margin-top: 8px;
+}
+
+.chosenMovie .flexChosenInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+/* **** SAMKLÚBBUR - RESTIN FRÁ FORSÍÐU **** */
+.samClubPaySpace .samClubAd {
+    width: 586px;
+    height: 330px;
+    margin: 8px auto 64px;
+    font-family: 'Noticia Text', serif;
+}
+
+/* **** VELJA MIÐA FJÖLDA **** */
+.select-2Dticket {
+    background-color: rgba(96, 102, 116, 0.8);
+    cursor: default;
+}
+
+.selectTicketContainer {
+    width: 611px;
+    margin: 0 auto;
+    padding: 56px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-2Dticket h2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.02em;
+}
+
+.select-2Dticket h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #F5F5F5;
+    letter-spacing: 0.01em;
+    margin-right: 16px;
+}
+
+.select-2Dticket .typeIcon {
+    height: 22px;
+    width: 22px;
+    margin-left: 8px;
+}
+
+.selectQuantity {
+    height: 40px;
+    width: 98px;
+    background-color: rgba(96, 102, 116, 0.8);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selectQuantity .dropdownDart {
+    height: 15px;
+    width: 15px;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.selectQuantity h4 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.flexTickets {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 56px;
+}
+
+.select-2Dticket .payCard {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-2Dticket .payCard .ticketType {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+
+#ticketTotalDropdown {
+    width: 98px;
+}
+
+/* **** GREIÐSLUVAL **** */
+.finishPay {
+    width: 952px;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.finishPay .paySum {
+    margin: 80px 0 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.finishPay .voucher {
+    display: flex;
+    flex-direction: column;
+}
+
+.finishPay .voucher h4 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.finishPay .voucherBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.finishPay .voucherBar input {
+    height: 60px;
+    width: 282px;
+    background-color: #F5F5F5;
+    border: 1px solid #007AC3;
+    box-sizing: border-box;
+    border-radius: 8px 0px 0px 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #606674;
+    letter-spacing: 0.01em;
+    text-indent: 16px;
+}
+
+.finishPay .voucherBar h3 {
+    height: 60px;
+    width: 122px;
+    background-color: rgba(0, 122, 195, 0.1);
+    border: 1px solid #007AC3;
+    box-sizing: border-box;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #007AC3;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.finishPay h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000;
+    text-align: right;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.finishPay .totalSum h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.01em;
+    text-align: right;
+}
+
+.finishPay .flexTicket {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.finishPay .flexInput {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.finishPay .eTicketEmail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.finishPay .eTicketEmail input {
+    width: 454px;
+    height: 60px;
+    background: #F5F5F5;
+    border: 1px solid #007AC3;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #606674;
+    letter-spacing: 0.01em;
+    text-indent: 16px;
+}
+
+.finishPay .payWay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.finishPay .payWay .flexPayCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.finishPay .payWay h3 {
+    height: 60px;
+    width: 220px;
+    background-color: rgba(0, 122, 195, 0.1);
+    border: 1px solid #007AC3;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #007AC3;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.finishPay .clickCancellBtn a {
+    height: 60px;
+    width: 220px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #606674;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+/* **** HOVER GREIÐSLUVAL **** */
+.finishPay .voucherBar h3:hover,
+.finishPay .payWay h3:hover {
+    background-color: rgba(0, 122, 195, 0.9);
+    color: #F5F5F5;
+}
+
+.finishPay .clickCancellBtn a:hover {
+    background: rgba(96, 102, 116, 0.8);
+    color: #F5F5F5;
+}
+
+.selectQuantity:hover,
+.selectQuantity:focus {
+    background-color: rgba(96, 102, 116, 1);
+}
+
+/* ************************************ */
+/* **** VÆNTANLEGT **** */
+/* ************************************ */
+
+/* **** SORTERING **** */
+.sorteringComingSoon {
+    width: 694px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 48px 0 56px;
+    cursor: default;
+}
+
+.sorteringComingSoon h1 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    color: #000;
+}
+
+.sorteringComingSoon h2 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #000;
+}
+
+.dropSortGenre {
+    display: flex;
+    cursor: pointer;
+}
+
+.dropSortGenre .dropdownDart {
+    height: 15px;
+    width: 15px;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* **** VÆNTANLEGT CARD DARK **** */
+.comingSoonCard {
+    cursor: default;
+}
+
+.comingSoonCard .flexInfoHolder,
+.comingSoonCard .ultraFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.comingSoonCard .flexHolder,
+.comingSoonCard .megaFlex,
+.comingSoonCard .soonInfo,
+.comingSoonCard .soonCrew {
+    flex-direction: column;
+}
+
+.comingSoonCard .ultraFlex {
+    background-color: rgba(96, 102, 116, 0.7);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 56px 0;
+}
+
+.comingSoonCard .flexInfoHolder {
+    width: 800px;
+}
+
+.comingSoonCard .soonPoster {
+    width: 261px;
+}
+
+.comingSoonCard .soonPoster .soonThePoster {
+    height: 368px;
+    width: 244px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px 8px 2px 2px;
+    position: relative;
+}
+
+.comingSoonCard .soonPoster .soonAgeLimit {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transform: translate(-66%, 669%);
+}
+
+.comingSoonCard .soonTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+}
+
+.comingSoonCard .soonTitle h1 {
+    font-size: 24PX;
+    line-height: 29px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.comingSoonCard h2 {
+    font-size: 16PX;
+    line-height: 20px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin: 16px 0 8px 40px;
+}
+
+.comingSoonCard .genreFlex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 32px;
+}
+
+.comingSoonCard .genreFlex h3 {
+    margin-left: 8px;
+}
+
+.comingSoonCard .soonCrew .soonActors h2 {
+    margin-top: 24px;
+}
+
+.comingSoonCard .soonCrew h2,
+.comingSoonCard .soonCrew h3 {
+    text-align: center;
+}
+
+.comingSoonCard h3,
+.comingSoonCard p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #F5F5F5;
+    letter-spacing: 0.01em;
+    margin-left: 40px;
+}
+
+.comingSoonCard p {
+    height: 166px;
+    width: 530px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin-top: 24px;
+}
+
+/* **** HOVER VÆNTANLEGT **** */
+.sorteringComingSoon h2:hover {
+    text-decoration: underline #E3000A;
+    cursor: pointer;
+}
+
+/* ************************************ */
+/* **** DROPDOWN MENU MOBILE **** */
+/* ************************************ */
+.dropdownTitleMobile {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdownMobileText {
+    display: none;
+    position: absolute;
+    background-color: #F5F5F5;
+    border: 1px solid rgba(96, 102, 116, 0.8);
+    box-sizing: border-box;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    top: 72px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdownMobileText a {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    padding: 8px;
+    align-items: center;
+}
+
+/* ************************************ */
+/* *** RESPONSIVE NAVBAR *** */
+/* ************************************ */
+@media screen and (max-width: 700px) {
+
+    /* **** MOBILE NAVBAR **** */
+    nav {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
+    .mobileFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobileNav .mobileLogo {
+        height: 100px;
+        width: 180px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .mobileNav .mobileHamburger {
+        height: 16px;
+        width: 40px;
+        position: absolute;
+        right: 8px;
+        top: 40px;
+        cursor: pointer;
+    }
+
+    .show {
+        display: block;
+    }
+}
