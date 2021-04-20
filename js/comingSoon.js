@@ -71,7 +71,7 @@ var comingSoonCard = [
 },
 {
     title: "Aquaman",
-    poster: "images/Aquaman-poster.jpg",
+    poster: "images/aquaman-poster.jpg",
     ageLimit: "images/12.png",
     premiere: "19.desember 2018",
     genreArray: [{
@@ -202,7 +202,7 @@ var comingSoonCard = [
 },
 {
     title: "Aladdin",
-    poster: "images/Aladdin-poster.jpg",
+    poster: "images/aladdin-poster.jpg",
     ageLimit: "images/L.png",
     premiere: "22.maí 2019",
     genreArray: [{
