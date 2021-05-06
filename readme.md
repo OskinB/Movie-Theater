@@ -10,7 +10,6 @@ This is not að full working project, but what you can do is:
   * Navigate to 'Væntanlegt' in the header
   * Click the social media links in the footer
 
-
 ## Stack
 This project is built with HTML, CSS, and JavaScript.
 
